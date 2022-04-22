@@ -16,7 +16,8 @@ Usage: iftat [OPTION]... [FILE]...
 
   [OPTION]
   -d        Print image file meta-data
-  -c        Convert input image file to another format image
+  -j        Convert input image file to jpeg file
+  -p        Convert input image file to png file
 ```
 
 ### Get and output meta-data
@@ -34,7 +35,7 @@ Updated: 2022/04/20
 $ ls
 Image.png
 
-$ iftat -c jpeg Image.png
+$ iftat -j Image.png
 
 $ ls
 Image.jpeg Image.png
