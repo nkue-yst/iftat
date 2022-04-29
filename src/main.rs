@@ -19,16 +19,12 @@ struct Options {
     png_flag: bool,
 
     // Input image files
+    #[clap(required = true)]
     file: Vec<String>,
 }
 
 fn main() {
     let options: Options = Options::parse();
-
-    if options.file.len() == 0 {
-        println!("Not enough arg");
-        std::process::exit(1);
-    }
 
     for f in options.file {
         println!("{:?}", f);
