@@ -8,16 +8,18 @@ Command line tool to convert image file format, get meta-data, etc...
 
 ## Usage
 ```
-Usage: iftat [OPTION]... [FILE]...
+USAGE:
+    iftat [OPTIONS] <FILE>...
 
-  [FILE]
-  Path to image file
-  Use all image file if FILE is directory.
+ARGS:
+    <FILE>...    
 
-  [OPTION]
-  -d        Print image file meta-data
-  -j        Convert input image file to jpeg file
-  -p        Convert input image file to png file
+OPTIONS:
+    -d, --data       Print image file meta data (Default)
+    -h, --help       Print help information
+    -j, --jpeg       Convert input image file to jpeg file
+    -p, --png        Convert input image file to png file
+    -V, --version    Print version information
 ```
 
 ### Get and output meta-data
