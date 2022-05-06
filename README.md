@@ -1,4 +1,7 @@
 # iftat
+
+[![Coverage Status](https://coveralls.io/repos/github/nkue-yst/iftat/badge.svg?branch=main)](https://coveralls.io/github/nkue-yst/iftat?branch=main)
+
 Command line tool to convert image file format, get meta-data, etc...
 
 ## Description
