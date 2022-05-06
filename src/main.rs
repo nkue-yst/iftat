@@ -31,3 +31,22 @@ fn main() {
     }
 }
 
+#[allow(dead_code)]
+fn hello(name: Option<String>) -> String {
+    return format!("Hello, {}", if let Some(n) = name {
+        n
+    } else {
+        "World!".to_string()
+    })
+}
+
+#[cfg(test)]
+mod test {
+    use super::*;
+
+    #[test]
+    fn test_sample() {
+        assert_eq!("Hello, World!", hello(None));
+        assert_eq!("Hello, nkue-yst", hello(Some("nkue-yst".to_string())));
+    }
+}
