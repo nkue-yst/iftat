@@ -2,6 +2,7 @@
 
 [![build](https://github.com/nkue-yst/iftat/actions/workflows/build.yaml/badge.svg)](https://github.com/nkue-yst/iftat/actions/workflows/build.yaml)
 [![Coverage Status](https://coveralls.io/repos/github/nkue-yst/iftat/badge.svg?branch=main)](https://coveralls.io/github/nkue-yst/iftat?branch=main)
+[![Rust Report Card](https://rust-reportcard.xuri.me/badge/github.com/nkue-yst/iftat)](https://rust-reportcard.xuri.me/report/github.com/nkue-yst/iftat)
 
 Command line tool to convert image file format, get meta-data, etc...
 
