@@ -1,12 +1,7 @@
 # iftat
 
-<img src="https://img.shields.io/badge/-Rust-000000.svg?logo=rust&style=plastic">
-<img src="https://img.shields.io/badge/-Linux-FCC624.svg?logo=linux&style=plastic">
-<img src="https://img.shields.io/badge/-Windows-0078D6.svg?logo=windows&style=plastic">
-
-[![build](https://github.com/nkue-yst/iftat/actions/workflows/build.yaml/badge.svg)](https://github.com/nkue-yst/iftat/actions/workflows/build.yaml)
-[![Coverage Status](https://coveralls.io/repos/github/nkue-yst/iftat/badge.svg?branch=main)](https://coveralls.io/github/nkue-yst/iftat?branch=main)
-[![Rust Report Card](https://rust-reportcard.xuri.me/badge/github.com/nkue-yst/iftat)](https://rust-reportcard.xuri.me/report/github.com/nkue-yst/iftat)
+<img src="https://img.shields.io/badge/-Rust-000000.svg?logo=rust&style=plastic"> <img src="https://img.shields.io/badge/-Linux-FCC624.svg?logo=linux&style=plastic"> <img src="https://img.shields.io/badge/-Windows-0078D6.svg?logo=windows&style=plastic">
+[![build](https://github.com/nkue-yst/iftat/actions/workflows/build.yaml/badge.svg)](https://github.com/nkue-yst/iftat/actions/workflows/build.yaml) [![Coverage Status](https://coveralls.io/repos/github/nkue-yst/iftat/badge.svg?branch=main)](https://coveralls.io/github/nkue-yst/iftat?branch=main) [![Rust Report Card](https://rust-reportcard.xuri.me/badge/github.com/nkue-yst/iftat)](https://rust-reportcard.xuri.me/report/github.com/nkue-yst/iftat)
 
 Command line tool to convert image file format, get meta-data, etc...
 
