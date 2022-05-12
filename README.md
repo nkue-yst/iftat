@@ -39,11 +39,11 @@ Updated: 2022/04/20
 
 ### Convert input image file to another format image
 ```
-$ ls
+$ ls sample/
 Image.png
 
-$ iftat -j Image.png
+$ iftat -j sample/Image.png
 
-$ ls
+$ ls sample
 Image.jpeg Image.png
 ```
