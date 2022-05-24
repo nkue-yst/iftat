@@ -29,11 +29,12 @@ OPTIONS:
 
 ### Get and output meta-data
 ```
-$ iftat -d Image.png
-Format : PNG
+$ iftat -d sample/Image.png
+File   : sample/Image.png
+Format : png
 Width  : 1920
 Height : 1080
-Size   : 42.3 MiB
+Size   : 41104 bytes
 Updated: 2022/04/20
 ```
 
