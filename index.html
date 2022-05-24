@@ -22,6 +22,7 @@
 <h1 class="title">btmeister</h1>
 </header>
 <h1 id="iftat">iftat</h1>
+<p><img src="https://img.shields.io/badge/-Rust-000000.svg?logo=rust&style=plastic"> <img src="https://img.shields.io/badge/-Linux-FCC624.svg?logo=linux&style=plastic"> <img src="https://img.shields.io/badge/-Windows-0078D6.svg?logo=windows&style=plastic"></p>
 <p><a href="https://github.com/nkue-yst/iftat/actions/workflows/build.yaml"><img src="https://github.com/nkue-yst/iftat/actions/workflows/build.yaml/badge.svg" alt="build" /></a> <a href="https://coveralls.io/github/nkue-yst/iftat?branch=main"><img src="https://coveralls.io/repos/github/nkue-yst/iftat/badge.svg?branch=main" alt="Coverage Status" /></a> <a href="https://rust-reportcard.xuri.me/report/github.com/nkue-yst/iftat"><img src="https://rust-reportcard.xuri.me/badge/github.com/nkue-yst/iftat" alt="Rust Report Card" /></a></p>
 <p>Command line tool to convert image file format, get meta-data, etc…</p>
 <h2 id="description">Description</h2>
@@ -44,19 +45,20 @@ OPTIONS:
     -p, --png        Convert input image file to png file
     -V, --version    Print version information</code></pre>
 <h3 id="get-and-output-meta-data">Get and output meta-data</h3>
-<pre><code>$ iftat -d Image.png
-Format : PNG
-Width  : 1920
-Height : 1080
-Size   : 42.3 MiB
-Updated: 2022/04/20</code></pre>
+<pre><code>$ iftat -d sample/Image.png
+File   : sample/Image.png
+Format : png
+Width  : 460
+Height : 460
+Size   : 41104 bytes
+Updated: 2022/5/17</code></pre>
 <h3 id="convert-input-image-file-to-another-format-image">Convert input image file to another format image</h3>
-<pre><code>$ ls
+<pre><code>$ ls sample/
 Image.png
 
-$ iftat -j Image.png
+$ iftat -j sample/Image.png
 
-$ ls
+$ ls sample
 Image.jpeg Image.png</code></pre>
 </body>
 </html>
