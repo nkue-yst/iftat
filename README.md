@@ -32,10 +32,10 @@ OPTIONS:
 $ iftat -d sample/Image.png
 File   : sample/Image.png
 Format : png
-Width  : 1920
-Height : 1080
+Width  : 460
+Height : 460
 Size   : 41104 bytes
-Updated: 2022/04/20
+Updated: 2022/5/17
 ```
 
 ### Convert input image file to another format image
