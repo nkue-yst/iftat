@@ -1,4 +1,9 @@
+use std::fs;
+use std::path::PathBuf;
+
+use chrono::prelude::{DateTime, Utc, Datelike};
 use clap::Parser;
+use image::GenericImageView;
 
 // Print image file meta-data option
 #[derive(Parser)]
@@ -35,11 +40,35 @@ struct Options {
     file: Vec<String>,
 }
 
+fn print_data(file: PathBuf) {
+    // Get file metadata
+    let metadata = fs::metadata(file.to_str().unwrap()).unwrap();
+
+    // Print file name and format
+    println!("File   : {}", file.to_str().unwrap());
+    println!("Format : {}", file.extension().unwrap().to_str().unwrap());
+
+    // Load image file
+    let img = image::open(file.to_str().unwrap()).unwrap();
+
+    // Print image size
+    println!("Width  : {}", img.dimensions().0);
+    println!("Height : {}", img.dimensions().1);
+
+    // Print data size
+    println!("Size   : {} bytes", metadata.len());
+
+    // Print modified date
+    let modified_date: DateTime<Utc> = metadata.modified().unwrap().into();
+    let modified_date = format!("{}/{}/{}", modified_date.year(), modified_date.month(), modified_date.day());
+    println!("Updated: {}", modified_date);
+}
+
 fn main() {
     let options: Options = Options::parse();
 
-    for f in options.file {
-        println!("{:?}", f);
+    if options.data_flag {
+        print_data(PathBuf::from(&options.file[0]).to_path_buf());
     }
 }
 
