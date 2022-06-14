@@ -3,7 +3,7 @@ use std::path::PathBuf;
 
 use chrono::prelude::{DateTime, Utc, Datelike};
 use clap::Parser;
-use image::GenericImageView;
+use image::{GenericImageView, ImageFormat};
 
 // Print image file meta-data option
 #[derive(Parser)]
@@ -64,11 +64,24 @@ fn print_data(file: PathBuf) {
     println!("Updated: {}", modified_date);
 }
 
+fn convert_to_jpeg(file: PathBuf) {
+    // Load original image file
+    let img = image::open(file.to_str().unwrap()).unwrap();
+
+    // Save as jpeg file
+    let out_path = file.to_str().unwrap();
+    img.save_with_format(out_path.replace(".png", ".jpeg"), ImageFormat::Jpeg).unwrap();
+}
+
 fn main() {
     let options: Options = Options::parse();
 
     if options.data_flag {
         print_data(PathBuf::from(&options.file[0]).to_path_buf());
+    }
+
+    if options.jpeg_flag {
+        convert_to_jpeg(PathBuf::from(&options.file[0]).to_path_buf());
     }
 }
 
