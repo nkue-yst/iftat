@@ -73,6 +73,15 @@ fn convert_to_jpeg(file: PathBuf) {
     img.save_with_format(out_path.replace(".png", ".jpeg"), ImageFormat::Jpeg).unwrap();
 }
 
+fn convert_to_png(file: PathBuf) {
+    // Load original image file
+    let img = image::open(file.to_str().unwrap()).unwrap();
+
+    // Save as jpeg file
+    let out_path = file.to_str().unwrap();
+    img.save_with_format(out_path.replace(".jpeg", ".png"), ImageFormat::Jpeg).unwrap();
+}
+
 fn main() {
     let options: Options = Options::parse();
 
@@ -82,6 +91,10 @@ fn main() {
 
     if options.jpeg_flag {
         convert_to_jpeg(PathBuf::from(&options.file[0]).to_path_buf());
+    }
+
+    if options.png_flag {
+        convert_to_png(PathBuf::from(&options.file[0]).to_path_buf());
     }
 }
 
