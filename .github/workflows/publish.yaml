@@ -48,7 +48,7 @@ jobs:
           args: >-
             --standalone
             --output=site/public/index.html
-            --metadata title=btmeister
+            --metadata title=iftat
             README.md
       - name: Deploy Site
         uses: peaceiris/actions-gh-pages@v3
