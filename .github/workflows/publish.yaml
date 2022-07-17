@@ -63,7 +63,7 @@ jobs:
             asset_name: iftat-${{ needs.setup.outputs.tag }}_windows_amd64
 
     steps:
-# initialization
+    # initialization
       - name: Checkout
         uses: actions/checkout@v2
         with:
