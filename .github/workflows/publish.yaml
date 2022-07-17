@@ -78,7 +78,7 @@ jobs:
       - name: Initialize Git
         shell: bash
         run: |
-          git submodule update --init
+#          git submodule update --init
       - name: Setup variable
         id: vars
         shell: bash
