@@ -3,7 +3,7 @@ name: docker_image
 on:
   workflow_run:
     workflows:
-      - "publish_site_release_assets"
+      - "publish_release_assets"
     types:
       - completed
 
