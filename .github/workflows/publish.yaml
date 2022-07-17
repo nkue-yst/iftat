@@ -12,7 +12,7 @@ jobs:
     # プルリクエストがマージされた場合のみに実行する．
     if: startsWith(github.head_ref, 'release/v') && github.event.pull_request.merged == true
     outputs:
-      tag: ${{ steps.vars.outputs.tag }}
+      tag: ${{ .vars.outputs.tag }}
       upload_url: ${{ steps.create_release.outputs.upload_url }}
     steps:
       - name: Git Tag name
@@ -74,6 +74,8 @@ jobs:
       - name: Initialize Git
         shell: bash
         run: |
+          git config --global user.name  "GitHub Actions"
+          git config --global user.email "action@github.com"
           git submodule update --init
       - name: Setup variable
         id: vars
