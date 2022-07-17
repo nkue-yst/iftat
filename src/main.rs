@@ -5,40 +5,7 @@ use chrono::prelude::{DateTime, Utc, Datelike};
 use clap::Parser;
 use image::{GenericImageView, ImageFormat};
 
-// Print image file meta-data option
-#[derive(Parser)]
-#[clap(
-    name = "iftat",
-    author = "Nakaue Yoshito",
-    version = "0.1.0",
-    about = "Command line tool to convert image file format, get meta-data, etc..."
-)]
-struct Options {
-    #[clap(
-        short = 'd',
-        long = "data",
-        help = "Print image file meta data (Default)"
-    )]
-    data_flag: bool,
-
-    #[clap(
-        short = 'j',
-        long = "jpeg",
-        help = "Convert input image file to jpeg file"
-    )]
-    jpeg_flag: bool,
-
-    #[clap(
-        short = 'p',
-        long = "png",
-        help = "Convert input image file to png file"
-    )]
-    png_flag: bool,
-
-    // Input image files
-    #[clap(required = true)]
-    file: Vec<String>,
-}
+mod cli;
 
 fn print_data(file: PathBuf) {
     // Get file metadata
@@ -83,7 +50,7 @@ fn convert_to_png(file: PathBuf) {
 }
 
 fn main() {
-    let options: Options = Options::parse();
+    let options = cli::Options::parse();
 
     if options.data_flag {
         print_data(PathBuf::from(&options.file[0]).to_path_buf());
