@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>iftat</title>
+    <link>https://nkue-yst.github.io/iftat/</link>
+    <description>Recent content on iftat</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://nkue-yst.github.io/iftat/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install</title>
+      <link>https://nkue-yst.github.io/iftat/install/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nkue-yst.github.io/iftat/install/</guid>
+      <description>Homebrew iftat supports installation via Homebrew.
+$ brew tap nkue-yst/brew $ brew install iftat Install yourself Clone the project from GitHub and compile it like follows.
+$ git clone https://github.com/nkue-yst/iftat.git $ cd iftat $ cargo build --release Then, cargo build the resultant iftat executable on target/release directory.</description>
+      <content>&lt;h3 id=&#34;homebrew&#34;&gt;Homebrew&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;iftat&lt;/code&gt; supports installation via &lt;a href=&#34;https://brew.sh/&#34;&gt;Homebrew&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ brew tap nkue-yst/brew
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ brew install iftat
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;install-yourself&#34;&gt;Install yourself&lt;/h3&gt;
+&lt;p&gt;Clone the project from GitHub and compile it like follows.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ git clone https://github.com/nkue-yst/iftat.git
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ cd iftat
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ cargo build --release
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then, &lt;code&gt;cargo&lt;/code&gt; build the resultant &lt;code&gt;iftat&lt;/code&gt; executable on &lt;code&gt;target/release&lt;/code&gt; directory.&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Usage</title>
+      <link>https://nkue-yst.github.io/iftat/usage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nkue-yst.github.io/iftat/usage/</guid>
+      <description>CLI iftat 0.3.7 Nakaue Yoshito Command line tool to convert image file format, get meta-data, etc... USAGE: iftat [OPTIONS] &amp;lt;FILE&amp;gt;... ARGS: &amp;lt;FILE&amp;gt;... OPTIONS: -d, --data Print image file meta data (Default) -h, --help Print help information -j, --jpeg Convert input image file to jpeg file -p, --png Convert input image file to png file -V, --version Print version information Sample Output Get and output meta-data $ iftat -d sample/Image.png File : sample/Image.</description>
+      <content>&lt;h2 id=&#34;cli&#34;&gt;CLI&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;iftat 0.3.7
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Nakaue Yoshito
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Command line tool to convert image file format, get meta-data, etc...
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;USAGE:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    iftat &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;OPTIONS&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &amp;lt;FILE&amp;gt;...
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ARGS:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &amp;lt;FILE&amp;gt;...    
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;OPTIONS:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    -d, --data       Print image file meta data &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Default&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    -h, --help       Print help information
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    -j, --jpeg       Convert input image file to jpeg file
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    -p, --png        Convert input image file to png file
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    -V, --version    Print version information
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;sample-output&#34;&gt;Sample Output&lt;/h2&gt;
+&lt;h3 id=&#34;get-and-output-meta-data&#34;&gt;Get and output meta-data&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ iftat -d sample/Image.png
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;File   : sample/Image.png
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Format : png
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Width  : &lt;span style=&#34;color:#ae81ff&#34;&gt;460&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Height : &lt;span style=&#34;color:#ae81ff&#34;&gt;460&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Size   : &lt;span style=&#34;color:#ae81ff&#34;&gt;41104&lt;/span&gt; bytes
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Updated: 2022/5/17
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;convert-input-image-file-to-another-format-image&#34;&gt;Convert input image file to another format image&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ ls sample/
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Image.png
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ iftat -j sample/Image.png
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ ls sample
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Image.jpeg Image.png
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;docker&#34;&gt;Docker&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker run --rm -it -v $PWD:/home/iftat ghcr.io/nkue-yst/iftat:latest
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The working directory in the docker container is &lt;code&gt;/home/iftat&lt;/code&gt;.
+The target project should be on the directory with &lt;code&gt;-v&lt;/code&gt; flag of docker.&lt;/p&gt;
+&lt;h3 id=&#34;available-versions&#34;&gt;Available versions&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;0.3.7&lt;/code&gt;, &lt;code&gt;latest&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>
